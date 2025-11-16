@@ -1,6 +1,7 @@
 import BadgeCheckIcon from "@components/icons/BadgeCheckIcon";
 import CircleAlertIcon from "@components/icons/CircleAlertIcon";
 import { TrobleShootMenuData } from "@data/test-case";
+import Link from "next/link";
 
 const TrobleShootSection = () => {
   return (
@@ -50,21 +51,21 @@ const TrobleShootSection = () => {
           <ul className="space-y-2 text-gray-300">
             <li>
               •{" "}
-              <a
+              <Link
                 href="https://jestjs.io/docs/getting-started"
                 className="text-blue-400 hover:underline"
               >
                 Jest Official Documentation
-              </a>
+              </Link>
             </li>
             <li>
               •{" "}
-              <a
+              <Link
                 href="https://testing-library.com/docs/"
                 className="text-blue-400 hover:underline"
               >
                 Testing Library Documentation
-              </a>
+              </Link>
             </li>
             <li>• Review existing tests in the boilerplate for examples</li>
             <li>• Reach out to the development team</li>

@@ -33,4 +33,18 @@ enum CiCdMenuType {
   TROUBLESHOOT = "troubleshoot",
 }
 
-export { TestCaseMenuType, VercelMenuType, CiCdMenuType };
+enum PwaMenuType {
+  OVERVIEW = "overview",
+  BENEFITS = "benefits",
+  INSTALLATION = "installation",
+  MANIFEST = "manifest",
+  SERVICE_WORKER = "service-worker",
+  ICONS = "icons",
+  OFFLINE = "offline",
+  NOTIFICATIONS = "notifications",
+  TESTING = "testing",
+  DEPLOYMENT = "deployment",
+  TROUBLESHOOT = "troubleshoot",
+}
+
+export { TestCaseMenuType, VercelMenuType, CiCdMenuType, PwaMenuType };

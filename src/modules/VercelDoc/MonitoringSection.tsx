@@ -4,6 +4,7 @@ import ExternalLinkIcon from "@components/icons/ExternalLinkIcon";
 import GithubIcon from "@components/icons/GithubIcon";
 import TrendingUpIcon from "@components/icons/TrendingUpIcon";
 import TriangleAlertIcon from "@components/icons/TriangleAlertIcon";
+import Link from "next/link";
 
 const MonitoringSection = () => {
   return (
@@ -39,7 +40,7 @@ const MonitoringSection = () => {
               • <strong>Custom Domains:</strong> Configure your own domain
             </li>
           </ul>
-          <a
+          <Link
             href="https://vercel.com/dashboard"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +48,7 @@ const MonitoringSection = () => {
           >
             <span>Open Dashboard</span>
             <ExternalLinkIcon width={16} height={16} />
-          </a>
+          </Link>
         </div>
 
         <div className="bg-gray-900 border border-gray-700 rounded-lg p-6">

@@ -1,9 +1,14 @@
 "use client";
 
+import InnerLayout from "@components/ui/InnerLayout";
+import PWAGuide from "./PWAGuide";
+
 const PWADetail = () => {
   return (
     <div>
-      <p>This is PWADetail page</p>
+       <InnerLayout title="PWA Documentation" isFullWidth={true}>
+        <PWAGuide />
+      </InnerLayout>
     </div>
   );
 };

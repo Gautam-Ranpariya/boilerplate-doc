@@ -1,0 +1,37 @@
+const MonitorIcon = ({
+  width,
+  height,
+  className,
+  strokeWidth,
+  strokeColor,
+  svgFillColor,
+}: CommonTypes.IIconProps) => {
+  const w = width || 24;
+  const h = height || 24;
+  const strockeW = strokeWidth || 2;
+  const strokeC = strokeColor || "currentColor";
+  const fillSVGC = svgFillColor || "none";
+  const classN = className || "";
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={w}
+        height={h}
+        viewBox={`0 0 ${w} ${h}`}
+        fill={fillSVGC}
+        stroke={strokeC}
+        strokeWidth={strockeW}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className={`lucide lucide-monitor-icon lucide-monitor ${classN}`}
+      >
+        <rect width="20" height="14" x="2" y="3" rx="2" />
+        <line x1="8" x2="16" y1="21" y2="21" />
+        <line x1="12" x2="12" y1="17" y2="21" />
+      </svg>
+    </>
+  );
+};
+
+export default MonitorIcon;

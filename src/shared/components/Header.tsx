@@ -19,33 +19,6 @@ const Header = () => {
 
   return (
     <>
-      {/* <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
-        <div className="px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <button
-                onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-                className="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100"
-              >
-                <ZapIcon />
-              </button>
-              <div className="text-2xl font-bold text-blue-600 cursor-pointer">
-                Documentation
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <button className="p-2 rounded-full text-gray-600 hover:bg-gray-100">
-               <BellIcon />
-              </button>
-              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-semibold">
-                G
-              </div>
-            </div>
-          </div>
-        </div>
-      </header> */}
-
       <header className="bg-[#0B1120] border-b border-[#1E2535] fixed top-0 left-0 right-0 z-50">
         <div className="px-4 py-4">
           <div className="flex items-center justify-between">
@@ -57,7 +30,7 @@ const Header = () => {
                 <ZapIcon />
               </button>
               <div className="text-2xl font-bold text-[#E5E7EB]">
-                Documentation
+                DocZone
               </div>
             </div>
 

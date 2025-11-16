@@ -25,25 +25,6 @@ const DesktopSidebar = () => {
 
   return (
     <>
-      {/* <aside className="hidden lg:block fixed left-0 top-16 bottom-0 w-64 bg-white shadow-lg overflow-y-auto">
-        <nav className="p-4">
-          {Array.isArray(navigationMenu) &&
-            navigationMenu.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleNavClick(item.id, item.path)}
-                className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg mb-2 ${
-                  currentPage === item.id
-                    ? "bg-blue-50 text-blue-600"
-                    : "text-gray-700 hover:bg-gray-100"
-                }`}
-              >
-                <span className="font-medium">{item.name}</span>
-              </button>
-            ))}
-        </nav>
-      </aside> */}
-
       <aside className="hidden lg:block fixed left-0 top-16 bottom-0 w-64 bg-[#111827] border-r border-[#1E2535] overflow-y-auto">
         <nav className="p-4">
           {navigationMenu.map((item) => (

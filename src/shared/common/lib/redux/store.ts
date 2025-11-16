@@ -4,6 +4,7 @@ import layoutReducer from './slices/common'
 import testCaseReducer from './slices/test-case'
 import vercelReducer from './slices/vercel'
 import ciCdReducer from './slices/ci-cd'
+import pwaReducer from './slices/pwa'
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
     testCase: testCaseReducer,
     vercel: vercelReducer,
     ciCd: ciCdReducer,
+    pwa: pwaReducer,
   },
 })
 

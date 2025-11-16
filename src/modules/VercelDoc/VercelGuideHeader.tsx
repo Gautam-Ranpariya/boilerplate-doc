@@ -12,7 +12,7 @@ const VercelGuideHeader = () => {
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-white">Vercel Deployment Guide</h1>
-                <p className="text-sm text-gray-400">Complete setup for Next.js TypeScript Boilerplate</p>
+                <p className="text-sm text-gray-400">Complete setup for DocZone</p>
               </div>
             </div>
           </div>

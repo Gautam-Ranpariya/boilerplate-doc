@@ -185,7 +185,8 @@ permissions:
               script: |
                 const prNumber = context.payload.pull_request.number;
                 const prAuthor = context.payload.pull_request.user.login;
-      
+              
+                // Replace Reviewer with 'Ka-ran123'
                 if (prAuthor === 'Ka-ran123') {
                   console.log("Skipping (self-review not allowed).");
                 } else {
@@ -193,7 +194,7 @@ permissions:
                     owner: context.repo.owner,
                     repo: context.repo.repo,
                     pull_number: prNumber,
-                    reviewers: ['Ka-ran123']
+                    reviewers: ['Ka-ran123'] // Replace Reviewer with 'Ka-ran123'
                   });
                 }`}
           />

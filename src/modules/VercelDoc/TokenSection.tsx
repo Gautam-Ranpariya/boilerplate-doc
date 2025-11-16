@@ -4,6 +4,7 @@ import KeyIcon from "@components/icons/KeyIcon";
 import RocketIcon from "@components/icons/RocketIcon";
 import SettingsIcon from "@components/icons/SettingsIcon";
 import ShieldIcon from "@components/icons/ShieldIcon";
+import Link from "next/link";
 
 const TokenSection = () => {
   return (
@@ -39,7 +40,7 @@ const TokenSection = () => {
             </li>
           </ol>
           <div className="mt-4">
-            <a
+            <Link
               href="https://vercel.com/account/tokens"
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +48,7 @@ const TokenSection = () => {
             >
               <span>Create Token</span>
               <ExternalLinkIcon width={16} height={16} />
-            </a>
+            </Link>
           </div>
         </div>
 

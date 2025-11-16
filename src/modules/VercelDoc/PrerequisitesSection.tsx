@@ -3,6 +3,7 @@ import ExternalLinkIcon from "@components/icons/ExternalLinkIcon";
 import GithubIcon from "@components/icons/GithubIcon";
 import RocketIcon from "@components/icons/RocketIcon";
 import TerminalIcon from "@components/icons/TerminalIcon";
+import Link from "next/link";
 
 const PrerequisitesSection = () => {
   return (
@@ -36,7 +37,7 @@ const PrerequisitesSection = () => {
                   Vercel Account
                 </h3>
                 <p className="text-gray-400 mb-3">Free account at vercel.com</p>
-                <a
+                <Link
                   href="https://vercel.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -44,7 +45,7 @@ const PrerequisitesSection = () => {
                 >
                   <span>Visit Vercel</span>
                   <ExternalLinkIcon width={16} height={16} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

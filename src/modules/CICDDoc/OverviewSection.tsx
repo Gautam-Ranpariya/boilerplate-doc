@@ -15,7 +15,7 @@ const OverviewSection = () => {
         <div className="bg-linear-to-r from-blue-900 to-purple-900 p-6 rounded-lg border border-blue-500">
           <p className="text-lg leading-relaxed">
             This guide explains the complete CI/CD pipeline implementation for
-            the Next.js TypeScript Boilerplate. The pipeline automates code
+            the DocZone. The pipeline automates code
             quality checks, testing, code review assignment, and deployment to
             Vercel.
           </p>

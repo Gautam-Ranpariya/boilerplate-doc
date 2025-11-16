@@ -31,7 +31,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-gray-500 text-sm">
-            Created with ❤️ for Next.js TypeScript Boilerplate
+            Created with ❤️ for DocZone
           </p>
         </div>
       </footer>

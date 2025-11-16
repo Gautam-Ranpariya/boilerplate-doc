@@ -20,12 +20,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Boilerplate Doc",
-  description:
-    "A Next.js Boilerplate documentation with Redux and Tailwind CSS",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{

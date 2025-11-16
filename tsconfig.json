@@ -22,7 +22,7 @@
       "@/*": ["./src/"],
       "@modules/*": ["./src/modules/*"],
       "@components/*": ["./src/shared/components/*"],
-      "@utils/*": ["./src/shared/utils/*"],
+      "@utils/*": ["./src/shared/common/utils/*"],
       "@lib/*": ["./src/shared/common/lib/*"],
       "@data/*": ["./src/data/*"],
       "@types/*": ["./src/types/*"],

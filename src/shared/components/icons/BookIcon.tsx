@@ -1,0 +1,37 @@
+
+const BookIcon = ({
+  width,
+  height,
+  className,
+  strokeWidth,
+  strokeColor,
+  svgFillColor,
+}: CommonTypes.IIconProps) => {
+  const w = width || 24;
+  const h = height || 24;
+  const strockeW = strokeWidth || 2;
+  const strokeC = strokeColor || "currentColor";
+  const fillSVGC = svgFillColor || "none";
+  const classN = className || "";
+
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={w}
+        height={h}
+        viewBox={`0 0 ${w} ${h}`}
+        fill={fillSVGC}
+        stroke={strokeC}
+        strokeWidth={strockeW}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className={`lucide lucide-book-icon lucide-book ${classN}`}
+      >
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+      </svg>
+    </>
+  );
+};
+
+export default BookIcon;

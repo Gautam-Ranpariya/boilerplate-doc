@@ -1,10 +1,11 @@
 "use client";
+import CICDGuide from "./CICDGuide";
 
 const CICDDetail = () => {
   return (
-    <div>
-      <p>This is CICDDetail page</p>
-    </div>
+    <>
+      <CICDGuide />
+    </>
   );
 };
 

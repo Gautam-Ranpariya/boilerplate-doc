@@ -1,6 +1,6 @@
 import BadgeCheckIcon from "@components/icons/BadgeCheckIcon";
 import ZapIcon from "@components/icons/ZapIcon";
-import { BestSectionMenu } from "@data/test-case-doc";
+import { BestSectionMenu } from "@data/test-case";
 
 const BestSection = () => {
   return (

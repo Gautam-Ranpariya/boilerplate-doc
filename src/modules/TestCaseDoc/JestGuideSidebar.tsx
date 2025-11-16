@@ -1,4 +1,4 @@
-import { testCaseDocMenuData } from "@data/test-case-doc";
+import { testCaseDocMenuData } from "@data/test-case";
 import { setActiveSection } from "@lib/redux/slices/test-case";
 import { AppDispatch, RootState } from "@lib/redux/store";
 import { useDispatch, useSelector } from "react-redux";

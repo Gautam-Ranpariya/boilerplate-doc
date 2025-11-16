@@ -1,7 +1,7 @@
 import CheckIcon from "@components/icons/CheckIcon";
 import CopyIcon from "@components/icons/CopyIcon";
 import TerminalIcon from "@components/icons/TerminalIcon";
-import { testCaseDocCommands } from "@data/test-case-doc";
+import { testCaseDocCommands } from "@data/test-case";
 import { setCopiedCode } from "@lib/redux/slices/common";
 import { AppDispatch, RootState } from "@lib/redux/store";
 import { useDispatch, useSelector } from "react-redux";

@@ -3,12 +3,14 @@ import { configureStore } from '@reduxjs/toolkit'
 import layoutReducer from './slices/common'
 import testCaseReducer from './slices/test-case'
 import vercelReducer from './slices/vercel'
+import ciCdReducer from './slices/ci-cd'
 
 export const store = configureStore({
   reducer: {
     layout: layoutReducer,
     testCase: testCaseReducer,
-    vercel: vercelReducer
+    vercel: vercelReducer,
+    ciCd: ciCdReducer,
   },
 })
 

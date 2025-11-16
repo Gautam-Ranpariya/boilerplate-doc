@@ -3,7 +3,7 @@ import RocketIcon from '@components/icons/RocketIcon'
 const VercelGuideHeader = () => {
   return (
     <>
-       <header className="bg-gray-900 bg-opacity-90 backdrop-blur-sm border-b border-blue-500 sticky top-0 z-50">
+       <header className="bg-gray-900 bg-opacity-90 backdrop-blur-sm border-b border-blue-500">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">

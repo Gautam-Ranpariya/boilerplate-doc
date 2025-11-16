@@ -10,7 +10,6 @@ declare namespace TestCase {
 
   interface ITestCaseState {
     activeSection: testcaseMenuType;
-   
   }
 
   interface ITestCaseDocMenuItem {

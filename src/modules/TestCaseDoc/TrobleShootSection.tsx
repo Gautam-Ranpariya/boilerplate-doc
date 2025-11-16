@@ -1,6 +1,6 @@
 import BadgeCheckIcon from "@components/icons/BadgeCheckIcon";
 import CircleAlertIcon from "@components/icons/CircleAlertIcon";
-import { TrobleShootMenuData } from "@data/test-case-doc";
+import { TrobleShootMenuData } from "@data/test-case";
 
 const TrobleShootSection = () => {
   return (

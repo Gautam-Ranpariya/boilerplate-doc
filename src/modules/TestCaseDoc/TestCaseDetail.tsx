@@ -5,11 +5,11 @@ import JestGuide from "./JestGuide";
 
 const TestCaseDetail = () => {
   return (
-    <div>      
+    <>      
       <InnerLayout title="Test Case Documentation" isFullWidth={true}>
         <JestGuide />
       </InnerLayout>
-    </div>
+    </>
   );
 };
 

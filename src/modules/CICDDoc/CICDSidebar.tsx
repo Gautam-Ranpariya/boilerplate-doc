@@ -1,17 +1,16 @@
-import { vercelMenuData } from "@data/vercel";
-import { setActiveSection } from "@lib/redux/slices/vercel";
+import { ciCdMenuData } from "@data/ci-cd";
+import { setActiveSection } from "@lib/redux/slices/ci-cd";
 import { AppDispatch, RootState } from "@lib/redux/store";
 import { useDispatch, useSelector } from "react-redux";
 
-const VercelGuideSidebar = () => {
+const CICDSidebar = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const { activeSection } = useSelector((state: RootState) => state.vercel);
+  const { activeSection } = useSelector((state: RootState) => state.ciCd);
 
-  // handle section click
-  const handleSetActiveSection = (section: Vercel.VercelMenuType) => {
-    dispatch(setActiveSection(section));
+  // handle naviagte to section
+  const handleNavigateToSection = (sectionId: CICD.CiCdMenuType) => {
+    dispatch(setActiveSection(sectionId));
   };
-
   return (
     <>
       <aside className="lg:col-span-1">
@@ -20,12 +19,13 @@ const VercelGuideSidebar = () => {
             Navigation
           </h3>
           <nav className="space-y-2">
-            {vercelMenuData &&
-              vercelMenuData.map((section: Vercel.IVercelDocMenuItem) => {
+            {ciCdMenuData &&
+              ciCdMenuData.map((section: CICD.ICICDDocMenuItem) => {
+                const Icon = section.icon;
                 return (
                   <button
                     key={section.id}
-                    onClick={() => handleSetActiveSection(section.id)}
+                    onClick={() => handleNavigateToSection(section.id)}
                     className={`w-full flex items-center space-x-3 px-4 py-2 rounded-lg transition-colors ${
                       activeSection === section.id
                         ? "bg-blue-600 text-white"
@@ -44,4 +44,4 @@ const VercelGuideSidebar = () => {
   );
 };
 
-export default VercelGuideSidebar;
+export default CICDSidebar;

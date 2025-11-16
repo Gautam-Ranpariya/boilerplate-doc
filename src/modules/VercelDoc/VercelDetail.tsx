@@ -5,11 +5,11 @@ import VercelGuide from "./VercelGuide";
 
 const VercelDetail = () => {
   return (
-    <div>
+    <>
       <InnerLayout title="Vercel Documentation" isFullWidth={true}>
         <VercelGuide />
       </InnerLayout>
-    </div>
+    </>
   );
 };
 

@@ -38,6 +38,7 @@ declare namespace CommonTypes {
     strokeColor?: string;
     svgFillColor?: string;
     pathFillColor?: string;
+    viewBox?: string;
   }
 
   interface IInnerLayoutProps {

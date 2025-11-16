@@ -3,18 +3,25 @@ const BellIcon = ({
   height,
   className,
   strokeWidth,
+  svgFillColor,
+  viewBox,
+  strokeColor,
 }: CommonTypes.IIconProps) => {
   const w = width || 24;
   const h = height || 24;
   const strokeW = strokeWidth || 2;
   const classN = className || "";
+  const vBox = viewBox || "0 0 24 24";
+  const strokeC = strokeColor || "currentColor";
+  const fillSVGC = svgFillColor || "none";
+
   return (
     <div>
       <svg
         className={`${classN}`}
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
+        fill={fillSVGC}
+        stroke={strokeC}
+        viewBox={vBox}
         width={w}
         height={h}
       >
